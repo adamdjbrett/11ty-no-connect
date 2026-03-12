@@ -8,9 +8,9 @@ title: Home
     {% for post in collections.posts %}
       <li>
         <span class="post-date">{{ post.date | displayDate }}</span>
-        <a class="post-link" href="{{ page.url | relLink(post.url) }}">{{ post.data.title }}</a>
+        <a class="post-link" href="{{ post.url | siteLink(page.url, site.siteBase) }}">{{ post.data.title }}</a>
       </li>
     {% endfor %}
   </ul>
-  <p class="rss-subscribe">subscribe <a href="{{ page.url | relLink('/feed.xml') }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | siteLink(page.url, site.siteBase) }}">via RSS</a></p>
 </div>

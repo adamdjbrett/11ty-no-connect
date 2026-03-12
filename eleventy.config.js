@@ -62,6 +62,24 @@ function relativeLink(fromUrl, toUrl) {
   return rel;
 }
 
+function absoluteSiteLink(siteBase, toUrl) {
+  if (!toUrl) {
+    return "";
+  }
+
+  if (/^(?:[a-z]+:)?\/\//i.test(toUrl) || toUrl.startsWith("file://")) {
+    return toUrl;
+  }
+
+  const normalizedBase = String(siteBase || "").replace(/\/+$/, "");
+  if (!normalizedBase) {
+    return "";
+  }
+
+  const toPath = ensureIndexHtml(toUrl);
+  return `${normalizedBase}/${toPath}`;
+}
+
 function xmlEscape(value = "") {
   return String(value)
     .replace(/&/g, "&amp;")
@@ -90,6 +108,13 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("xmlEscape", xmlEscape);
   eleventyConfig.addFilter("relLink", relativeLink);
+  eleventyConfig.addFilter("siteLink", (toUrl, fromUrl, siteBase) => {
+    if (siteBase) {
+      return absoluteSiteLink(siteBase, toUrl);
+    }
+
+    return relativeLink(fromUrl, toUrl);
+  });
 
   eleventyConfig.addCollection("posts", (collectionApi) => {
     return collectionApi.getFilteredByTag("posts").sort((a, b) => {

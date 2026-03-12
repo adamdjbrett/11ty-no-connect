@@ -1,10 +1,10 @@
 <header class="site-header">
   <div class="wrap">
-    <a class="site-title" href="{{ page.url | relLink('/') }}">{{ site.title }}</a>
+    <a class="site-title" href="{{ '/' | siteLink(page.url, site.siteBase) }}">{{ site.title }}</a>
     <nav class="site-nav">
       <div class="trigger">
-        <a class="page-link" href="{{ page.url | relLink('/about/') }}">About</a>
-        <a class="page-link" href="{{ page.url | relLink('/feed.xml') }}">RSS</a>
+        <a class="page-link" href="{{ '/about/' | siteLink(page.url, site.siteBase) }}">About</a>
+        <a class="page-link" href="{{ '/feed.xml' | siteLink(page.url, site.siteBase) }}">RSS</a>
       </div>
     </nav>
   </div>
