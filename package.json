@@ -1,0 +1,16 @@
+{
+  "name": "11ty-no-connect",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "eleventy --config=eleventy.config.js",
+    "start": "eleventy --serve --config=eleventy.config.js",
+    "clean": "rm -rf _site"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "4.0.0-alpha.6"
+  }
+}

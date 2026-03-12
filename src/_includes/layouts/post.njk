@@ -1,0 +1,10 @@
+---
+layout: layouts/default.njk
+---
+<div class="post">
+  <header class="post-header">
+    <h1>{{ title }}</h1>
+    {% if page.date %}<p class="meta">{{ page.date | displayDate }}{% if author %} • {{ author }}{% endif %}</p>{% endif %}
+  </header>
+  <article class="post-content">{{ content | safe }}</article>
+</div>

@@ -1,0 +1,16 @@
+---
+layout: layouts/default.njk
+title: Home
+---
+<div class="home">
+  <h1>Posts</h1>
+  <ul class="posts">
+    {% for post in collections.posts %}
+      <li>
+        <span class="post-date">{{ post.date | displayDate }}</span>
+        <a class="post-link" href="{{ page.url | relLink(post.url) }}">{{ post.data.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <p class="rss-subscribe">subscribe <a href="{{ page.url | relLink('/feed.xml') }}">via RSS</a></p>
+</div>

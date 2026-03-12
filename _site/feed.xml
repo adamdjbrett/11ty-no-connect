@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>No Connect (11ty)</title>
+    <description>A minimal offline-first static site for local disk or USB browsing with no local server.</description>
+    <link>./index.html</link>
+    <atom:link href="./feed.xml" rel="self" type="application/rss+xml" />
+    
+      
+      <item>
+        <title>Batman</title>
+        <description>&amp;lt;p&amp;gt;I am batman&amp;lt;/p&amp;gt;
+</description>
+        <pubDate>Wed, 11 Mar 2026 00:00:00 GMT</pubDate>
+        <link>./../../index.html</link>
+        <guid isPermaLink="false">/blog/batman/</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Sample Markdown</title>
+        <description>&amp;lt;h1&amp;gt;An h1 header&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;Paragraphs are separated by a blank line.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;2nd paragraph. &amp;lt;em&amp;gt;Italic&amp;lt;/em&amp;gt;, &amp;lt;strong&amp;gt;bold&amp;lt;/strong&amp;gt;, and &amp;lt;code&amp;gt;monospace&amp;lt;/code&amp;gt;. Itemized lists
+look like:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;this one&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;that one&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;the other one&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Note that --- not considering the asterisk --- the actual text
+content starts at 4-columns in.&amp;lt;/p&amp;gt;
+&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;Block quotes are
+written like so.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;They can span multiple paragraphs,
+if you like.&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&amp;lt;p&amp;gt;Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., &amp;amp;quot;it&amp;apos;s all
+in chapters 12--14&amp;amp;quot;). Three dots ... will be converted to an ellipsis.
+Unicode is supported. ☺&amp;lt;/p&amp;gt;
+&amp;lt;h2&amp;gt;An h2 header&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Here&amp;apos;s a numbered list:&amp;lt;/p&amp;gt;
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;first item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;second item&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;third item&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&amp;lt;p&amp;gt;Note again how the actual text starts at 4 columns in (4 characters
+from the left side). Here&amp;apos;s a code sample:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;# Let me re-iterate ...
+for i in 1 .. 10 { do-something(i) }&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;As you probably guessed, indented 4 spaces. By the way, instead of
+indenting the block, you can use delimited blocks, if you like:&amp;lt;/p&amp;gt;
+&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;define foobar() {
+    print &amp;amp;quot;Welcome to flavor country!&amp;amp;quot;;
+}
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;p&amp;gt;(which makes copying &amp;amp;amp; pasting easier). You can optionally mark the
+delimited block for Pandoc to syntax highlight it:&amp;lt;/p&amp;gt;
+&amp;lt;pre&amp;gt;&amp;lt;code class=&amp;quot;language-python&amp;quot;&amp;gt;import time
+# Quick, count to ten!
+for i in range(10):
+    # (but not *too* quick)
+    time.sleep(0.5)
+    print i
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;h3&amp;gt;An h3 header&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Now a nested list:&amp;lt;/p&amp;gt;
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;First, get these ingredients:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;carrots&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;celery&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;lentils&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;Boil some water.&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;p&amp;gt;Dump everything in the pot and follow
+this algorithm:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;find wooden spoon
+uncover pot
+stir
+cover pot
+balance wooden spoon precariously on pot handle
+wait 10 minutes
+goto first step (or shut off burner when done)&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Do not bump wooden spoon or it will fall.&amp;lt;/p&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&amp;lt;p&amp;gt;Notice again how text always lines up on 4-space indents (including
+that last line which continues item 3 above).&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Here&amp;apos;s a link to &amp;lt;a href=&amp;quot;http://foo.bar&amp;quot;&amp;gt;a website&amp;lt;/a&amp;gt;, to a &amp;lt;a href=&amp;quot;local-doc.html&amp;quot;&amp;gt;local
+doc&amp;lt;/a&amp;gt;, and to a &amp;lt;a href=&amp;quot;#an-h2-header&amp;quot;&amp;gt;section heading in the current
+doc&amp;lt;/a&amp;gt;. Here&amp;apos;s a footnote [^1].&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;[^1]: Footnote text goes here.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Tables can look like this:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;size  material      color&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;p&amp;gt;9     leather       brown
+10    hemp canvas   natural
+11    glass         transparent&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Table: Shoes, their sizes, and what they&amp;apos;re made of&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;(The above is the caption for the table.) Pandoc also supports
+multi-line tables:&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;p&amp;gt;keyword   text&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;p&amp;gt;red       Sunsets, apples, and
+other red or reddish
+things.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;green     Leaves, grass, frogs
+and other things it&amp;apos;s
+not easy being.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;p&amp;gt;A horizontal rule follows.&amp;lt;/p&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;p&amp;gt;Here&amp;apos;s a definition list:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;apples
+: Good for making applesauce.
+oranges
+: Citrus!
+tomatoes
+: There&amp;apos;s no &amp;amp;quot;e&amp;amp;quot; in tomatoe.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Again, text is indented 4 spaces. (Put a blank line between each
+term/definition pair to spread things out more.)&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Here&amp;apos;s a &amp;amp;quot;line block&amp;amp;quot;:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;| Line one
+|   Line too
+| Line tree&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;and images can be specified like so:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;img src=&amp;quot;example-image.jpg&amp;quot; alt=&amp;quot;example image&amp;quot; title=&amp;quot;An exemplary image&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Inline math equations go in like so: $&#92;omega = d&#92;phi / dt$. Display
+math should get its own line and be put in in double-dollarsigns:&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;$$I = &#92;int &#92;rho R^{2} dV$$&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;And note that you can backslash-escape any punctuation characters
+which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&amp;lt;/p&amp;gt;
+</description>
+        <pubDate>Sun, 06 Apr 2025 00:00:00 GMT</pubDate>
+        <link>./../../index.html</link>
+        <guid isPermaLink="false">/blog/sample/</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>This is my third post.</title>
+        <description>&amp;lt;p&amp;gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&amp;lt;/p&amp;gt;
+&amp;lt;h2&amp;gt;Code&amp;lt;/h2&amp;gt;
+&amp;lt;h3&amp;gt;This is a very long heading that I want to wrap This is a very long heading that I want to wrap This is a very long heading that I want to wrap This is a very long heading that I want to wrap&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&amp;lt;/p&amp;gt;
+&amp;lt;pre&amp;gt;&amp;lt;code class=&amp;quot;language-js&amp;quot;&amp;gt;// this is a command
+function myCommand() {
+	let counter = 0;
+	counter++;
+}
+
+// Test with a line break above this line.
+console.log(&amp;apos;Test&amp;apos;);
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;h3&amp;gt;Heading with a &amp;lt;a href=&amp;quot;#code&amp;quot;&amp;gt;link&amp;lt;/a&amp;gt;&amp;lt;/h3&amp;gt;
+&amp;lt;p&amp;gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&amp;lt;/p&amp;gt;
+&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;// this is a command
+function myCommand() {
+	let counter = 0;
+	counter++;
+}
+
+// Test with a line break above this line.
+console.log(&amp;apos;Test&amp;apos;);
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;h2&amp;gt;Section Header&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&amp;lt;/p&amp;gt;
+</description>
+        <pubDate>Fri, 24 Aug 2018 00:00:00 GMT</pubDate>
+        <link>./../../index.html</link>
+        <guid isPermaLink="false">/blog/thirdpost/</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>This is my second post with a much longer title.</title>
+        <description>&amp;lt;p&amp;gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&amp;lt;/p&amp;gt;
+&amp;lt;h2&amp;gt;Section Header&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&amp;lt;/p&amp;gt;
+</description>
+        <pubDate>Wed, 04 Jul 2018 00:00:00 GMT</pubDate>
+        <link>./../../index.html</link>
+        <guid isPermaLink="false">/blog/secondpost/</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>This is my fifth post.</title>
+        <description>&amp;lt;p&amp;gt;This is a draft post&amp;lt;/p&amp;gt;
+</description>
+        <pubDate>Tue, 01 May 2018 00:00:00 GMT</pubDate>
+        <link>./../../index.html</link>
+        <guid isPermaLink="false">/blog/fifthpost/</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>This is my first post.</title>
+        <description>&amp;lt;p&amp;gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&amp;lt;/p&amp;gt;
+&amp;lt;h2&amp;gt;Section Header&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&amp;lt;/p&amp;gt;
+&amp;lt;pre&amp;gt;&amp;lt;code class=&amp;quot;language-diff-js&amp;quot;&amp;gt; // this is a command
+ function myCommand() {
++  let counter = 0;
+-  let counter = 1;
+   counter++;
+ }
+
+ // Test with a line break above this line.
+ console.log(&amp;apos;Test&amp;apos;);
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+</description>
+        <pubDate>Tue, 01 May 2018 00:00:00 GMT</pubDate>
+        <link>./../../index.html</link>
+        <guid isPermaLink="false">/blog/firstpost/</guid>
+      </item>
+      
+    
+  </channel>
+</rss>
