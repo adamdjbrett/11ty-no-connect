@@ -1,6 +1,6 @@
 # 11ty-no-connect
 
-Offline-first Eleventy template inspired by Jekyll no-connect.
+Offline-first Eleventy template inspired by [Jekyll no-connect](https://github.com/xpmethod/no-connect).
 
 ## Commands
 
