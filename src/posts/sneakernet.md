@@ -29,7 +29,6 @@ npm run build
 This creates `_site/`.
 
 ## USB-ready links with `SITE_BASE`
-### no folders with spaces or capitals for this to work. name the usb stick one word.
 
 If you want links to be explicit `file://` URLs for a mounted USB path, build with `SITE_BASE`.
 
@@ -69,8 +68,8 @@ On Linux, macOS, or Windows:
 The site runs fully offline from the USB stick.
 
 ## Practical compatibility tips
-
-- Keep filenames lowercase and simple.
+- name the usb stick one word, lowercase, and simple.
+- Keep filenames, oneword, lowercase and simple.
 - Avoid server-only features (API calls, dynamic auth, backend forms).
 - Prefer local assets over remote CDNs for true offline behavior.
 
