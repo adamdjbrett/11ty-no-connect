@@ -3,16 +3,48 @@
   <channel>
     <title>No Connect (11ty)</title>
     <description>A minimal offline-first static site for local disk or USB browsing with no local server.</description>
-    <link>./index.html</link>
-    <atom:link href="./feed.xml" rel="self" type="application/rss+xml" />
+    <link>index.html</link>
+    <atom:link href="feed.xml" rel="self" type="application/rss+xml" />
+    
+      
+      <item>
+        <title>siteBase and running on a usb with no server</title>
+        <description>&amp;lt;h2&amp;gt;USB &amp;lt;code&amp;gt;siteBase&amp;lt;/code&amp;gt; option&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;You can optionally emit absolute &amp;lt;code&amp;gt;file://&amp;lt;/code&amp;gt; links by setting &amp;lt;code&amp;gt;SITE_BASE&amp;lt;/code&amp;gt; at build time.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Example for a USB volume named &amp;lt;code&amp;gt;no-connect&amp;lt;/code&amp;gt; on macOS:&amp;lt;/p&amp;gt;
+&amp;lt;pre&amp;gt;&amp;lt;code class=&amp;quot;language-bash&amp;quot;&amp;gt;SITE_BASE=&amp;amp;quot;file:///Volumes/no-connect&amp;amp;quot; npm run build
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;p&amp;gt;When &amp;lt;code&amp;gt;SITE_BASE&amp;lt;/code&amp;gt; is set:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;CSS and internal page links are generated as absolute &amp;lt;code&amp;gt;file://...&amp;lt;/code&amp;gt; URLs.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;RSS links are generated with the same base.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;Notes:&amp;lt;/p&amp;gt;
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;code&amp;gt;SITE_BASE&amp;lt;/code&amp;gt; should match the final mount path where files will be opened.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Do not include a trailing slash; the build normalizes it, but keeping it clean avoids mistakes.&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;If the USB name/path changes, rebuild with the new &amp;lt;code&amp;gt;SITE_BASE&amp;lt;/code&amp;gt;.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;h2&amp;gt;Quick publish flow to USB&amp;lt;/h2&amp;gt;
+&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;Build the site: &amp;lt;code&amp;gt;npm run build&amp;lt;/code&amp;gt; (or use &amp;lt;code&amp;gt;SITE_BASE=... npm run build&amp;lt;/code&amp;gt;).&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Copy &amp;lt;code&amp;gt;_site/*&amp;lt;/code&amp;gt; to the USB root (or chosen folder).&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Open &amp;lt;code&amp;gt;index.html&amp;lt;/code&amp;gt; directly from the USB.&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+</description>
+        <pubDate>Wed, 11 Mar 2026 00:00:00 GMT</pubDate>
+        <link>blog/sitebase/index.html</link>
+        <guid isPermaLink="false">/blog/sitebase/</guid>
+      </item>
+      
     
       
       <item>
         <title>Batman</title>
         <description>&amp;lt;p&amp;gt;I am batman&amp;lt;/p&amp;gt;
 </description>
-        <pubDate>Wed, 11 Mar 2026 00:00:00 GMT</pubDate>
-        <link>./../../index.html</link>
+        <pubDate>Tue, 10 Mar 2026 00:00:00 GMT</pubDate>
+        <link>blog/batman/index.html</link>
         <guid isPermaLink="false">/blog/batman/</guid>
       </item>
       
@@ -142,7 +174,7 @@ math should get its own line and be put in in double-dollarsigns:&amp;lt;/p&amp;
 which you wish to be displayed literally, ex.: `foo`, *bar*, etc.&amp;lt;/p&amp;gt;
 </description>
         <pubDate>Sun, 06 Apr 2025 00:00:00 GMT</pubDate>
-        <link>./../../index.html</link>
+        <link>blog/sample/index.html</link>
         <guid isPermaLink="false">/blog/sample/</guid>
       </item>
       
@@ -178,7 +210,7 @@ console.log(&amp;apos;Test&amp;apos;);
 &amp;lt;p&amp;gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&amp;lt;/p&amp;gt;
 </description>
         <pubDate>Fri, 24 Aug 2018 00:00:00 GMT</pubDate>
-        <link>./../../index.html</link>
+        <link>blog/thirdpost/index.html</link>
         <guid isPermaLink="false">/blog/thirdpost/</guid>
       </item>
       
@@ -192,7 +224,7 @@ console.log(&amp;apos;Test&amp;apos;);
 &amp;lt;p&amp;gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&amp;lt;/p&amp;gt;
 </description>
         <pubDate>Wed, 04 Jul 2018 00:00:00 GMT</pubDate>
-        <link>./../../index.html</link>
+        <link>blog/secondpost/index.html</link>
         <guid isPermaLink="false">/blog/secondpost/</guid>
       </item>
       
@@ -203,7 +235,7 @@ console.log(&amp;apos;Test&amp;apos;);
         <description>&amp;lt;p&amp;gt;This is a draft post&amp;lt;/p&amp;gt;
 </description>
         <pubDate>Tue, 01 May 2018 00:00:00 GMT</pubDate>
-        <link>./../../index.html</link>
+        <link>blog/fifthpost/index.html</link>
         <guid isPermaLink="false">/blog/fifthpost/</guid>
       </item>
       
@@ -227,7 +259,7 @@ console.log(&amp;apos;Test&amp;apos;);
 &amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
 </description>
         <pubDate>Tue, 01 May 2018 00:00:00 GMT</pubDate>
-        <link>./../../index.html</link>
+        <link>blog/firstpost/index.html</link>
         <guid isPermaLink="false">/blog/firstpost/</guid>
       </item>
       

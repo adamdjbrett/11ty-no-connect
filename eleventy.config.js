@@ -90,6 +90,8 @@ function xmlEscape(value = "") {
 }
 
 module.exports = function (eleventyConfig) {
+  const configuredSiteBase = (process.env.SITE_BASE || "").trim().replace(/\/+$/, "");
+
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
 
   eleventyConfig.addFilter("displayDate", (value) => {
@@ -108,9 +110,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("xmlEscape", xmlEscape);
   eleventyConfig.addFilter("relLink", relativeLink);
-  eleventyConfig.addFilter("siteLink", (toUrl, fromUrl, siteBase) => {
-    if (siteBase) {
-      return absoluteSiteLink(siteBase, toUrl);
+  eleventyConfig.addFilter("siteLink", (toUrl, fromUrl) => {
+    if (configuredSiteBase) {
+      return absoluteSiteLink(configuredSiteBase, toUrl);
     }
 
     return relativeLink(fromUrl, toUrl);

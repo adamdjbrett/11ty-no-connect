@@ -2,17 +2,26 @@
 
 Offline-first Eleventy template inspired by Jekyll no-connect.
 
-## Usage
-In 
-
 ## Commands
 
-- `npm run build`
-- `npm run start`
+- `npm run build` \#start the `_site` build
+- `npm run start` \#start the server
+- `npm run clean` \#delete the `_site` folder
 
-## Usage
+## Default mode (recommended)
 
-1. Build the site.
-2. Open `_site/index.html` directly from your filesystem or USB.
+Build with relative links (works from local disk and USB without hard-coding a device path):
 
-No local web server is required.
+```bash
+npm run build
+```
+
+Then open:
+
+```text
+_site/index.html
+```
+
+## Read Next
+
+- Linux guide post: `_site/blog/sneakernet/index.html`
