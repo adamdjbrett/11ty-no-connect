@@ -48,4 +48,4 @@ To learn more about how to use Jekyll visit [their excellent documentation](http
 
 - <http://stackoverflow.com/questions/26778329/running-jekyll-generated-files-without-jekyll-local-server>
 
-- <http://stackoverflow.com/questions/16316311/github-pages-and-relative-paths>
+- http://stackoverflow.com/questions/16316311/github-pages-and-relative-paths
